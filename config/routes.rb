@@ -54,7 +54,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  resources :owners, :owners, defaults: {format: :json} do
+    resources :articles,defaults: {format: :json}
+  end
 
-  resources :articles,defaults: {format: :json}
 
 end

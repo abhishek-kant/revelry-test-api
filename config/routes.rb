@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -57,7 +57,7 @@ Rails.application.routes.draw do
 
 
   scope "/", :defaults => { :format => 'json' }do
-
+    root 'owners#index'
     resources :articles, only: [:show]
     resources :owners, only: :index
     resources :owners,only: [:show], path:"/" do

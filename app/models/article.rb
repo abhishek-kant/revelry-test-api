@@ -4,8 +4,7 @@ class Article < ActiveRecord::Base
 
   belongs_to :owner
 
-  validates :name, presence: true, uniqueness: true
-  validates_presence_of :owner
+  validates :name, :owner, presence: true
 
 
   def owner_name

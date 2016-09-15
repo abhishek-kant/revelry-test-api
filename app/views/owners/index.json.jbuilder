@@ -1,1 +1,1 @@
-json.owners @owners, :name
+json.owners @owners, :name, :slug

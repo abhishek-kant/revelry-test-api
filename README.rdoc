@@ -1,28 +1,18 @@
-== README
+Sample this application is deployed on heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://revelry-test.herokuapp.com
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+1. Owner-list
+  http://revelry-test.herokuapp.com
+  http://revelry-test.herokuapp.com/owners
+  
+2 Owner detail
+  http://revelry-test.herokuapp.com/luis-cartwright (Luis Cartwright is the name of the owner)
+
+3. Owners Articles:
+  http://revelry-test.herokuapp.com/luis-cartwright/articles
+  
+4. Article Detail
+  http://revelry-test.herokuapp.com/articles/dr-vergie-sauer (Dr. Vergie Sauer is the name of the article)

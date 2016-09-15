@@ -1,4 +1,4 @@
-Sample this application is deployed on heroku
+This application is deployed on heroku
 
 http://revelry-test.herokuapp.com
 

@@ -8,7 +8,7 @@ http://revelry-test.herokuapp.com
   http://revelry-test.herokuapp.com
   http://revelry-test.herokuapp.com/owners
   
-2 Owner detail
+2. Owner detail
   http://revelry-test.herokuapp.com/luis-cartwright (Luis Cartwright is the name of the owner)
 
 3. Owners Articles:

@@ -54,9 +54,20 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :owners, :owners, defaults: {format: :json} do
-    resources :articles,defaults: {format: :json}
+
+
+  scope "/", :defaults => { :format => 'json' }do
+
+    resources :articles, only: [:show]
+    resources :owners, only: :index
+    resources :owners,only: [:show], path:"/" do
+      resources :articles, only: [:index]
+    end
+
   end
+
+
+  # resources :owners, path:"/:id"
 
 
 end

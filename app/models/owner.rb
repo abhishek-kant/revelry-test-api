@@ -3,4 +3,6 @@ class Owner < ActiveRecord::Base
   friendly_id :name, use: [:slugged, :history]
 
   has_many :articles
+
+  validates :name, presence: true, uniqueness: true
 end

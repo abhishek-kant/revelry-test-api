@@ -17,8 +17,8 @@ RSpec.describe "Articles", :type => :request do
 
   describe "GET /article/:id" do
     it "returns an by name" do
-
-      article = FactoryGirl.create(:article)
+      owner = FactoryGirl.create(:owner)
+      article = FactoryGirl.create(:article, owner: owner)
 
       get article_path(article)
       article_from_response = JSON.parse(response.body)

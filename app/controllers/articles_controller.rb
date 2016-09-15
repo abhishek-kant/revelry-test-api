@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.limit(15)
+    @owner = Owner.friendly.find(params[:owner_id])
+    @articles = @owner.articles.limit(15)
   end
 
   def show
